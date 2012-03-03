@@ -8,6 +8,8 @@ import android.util.Log;
 
 public class ShowServiceModeActivity extends Activity
 {
+	public static final String SECRET_CODE_ACTION = "android.provider.Telephony.SECRET_CODE";
+
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -17,10 +19,8 @@ public class ShowServiceModeActivity extends Activity
 
 		try
 		{
-			Intent intent =
-					new Intent(Intent.ACTION_DIAL, Uri.parse("tel:*"
-							+ Uri.encode("#") + "2263" + Uri.encode("#") + ""));
-			startActivity(intent);
+			Intent intent =	new Intent(SECRET_CODE_ACTION, Uri.parse("android_secret_code://2263"));
+			sendBroadcast(intent);
 		}
 		catch(Exception e)
 		{

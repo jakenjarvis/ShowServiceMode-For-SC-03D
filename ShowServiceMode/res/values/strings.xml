@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, ShowServiceModeActivity!</string>
+    <string name="hello">自己責任でご利用ください。作者は一切の責任を持ちません。</string>
     <string name="app_name">ShowServiceMode For SC-03D</string>
 
 </resources>
