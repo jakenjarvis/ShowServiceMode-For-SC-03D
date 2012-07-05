@@ -19,7 +19,7 @@ public class ShowServiceModeActivity extends Activity
 		{
 			Intent intent =
 					new Intent(Intent.ACTION_DIAL, Uri.parse("tel:*"
-							+ Uri.encode("#") + "2263" + Uri.encode("#") + ""));
+							+ Uri.encode("#") + "197328640" + Uri.encode("#") + ""));
 			startActivity(intent);
 		}
 		catch(Exception e)
